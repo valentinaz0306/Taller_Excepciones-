@@ -87,21 +87,16 @@ function draw() {
             fill(255);
             text("Añadir Circulo", 500, 152);
 
-            /* if (numero == 10) {
-                text(numero, 285, 305);
-            } else {
-        
-                text(numero, 290, 305);
-            }
+            
             if (mensajeNum == true) {
                 text("Excedió el límite", 250, 100);
             }
             if (mensajeTam == true) {
                 text("Tamaño maximo", 250, 100);
-            }*/
+            }
 
-            textSize(50);
-            text('x:' + mouseX + 'y:' + mouseY, mouseX, mouseY);
+            /*textSize(50);
+            text('x:' + mouseX + 'y:' + mouseY, mouseX, mouseY);*/
             break;
 
     }//cierra switch
@@ -247,7 +242,7 @@ function pintarFiguras() {
 
 function duplicarTam() {
     try {
-        if (cuadrados[cuadrados.length - 1].tam == 100 && circulos[circulos.length - 1].tam == 100) {
+        if (cuadrados[cuadrados.length - 1].tamano == 100 && circulos[circulos.length - 1].tamano == 100) {
             throw new tamException("Ya se obtuvo el tamaño maximo");
         } else {
             cuadrados.forEach(element => {
